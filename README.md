@@ -2,6 +2,7 @@
 **Institution:** National University of Lesotho  
 **Department:** Mathematics and Computer Science  
 **Course Code:** CS5430  
+**Course Description:** Multimedia Systems
 
 ---
 
