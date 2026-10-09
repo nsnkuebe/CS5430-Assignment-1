@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">ISACS video thumbnail</title>
+  <desc id="desc">A stylized marketing thumbnail for ISACS featuring a navy background, cyber blue accents, and coral play button.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0A192F"/>
+      <stop offset="100%" stop-color="#163A5F"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#00B4D8"/>
+      <stop offset="100%" stop-color="#FF5A36"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="170" cy="160" r="90" fill="#00B4D8" opacity="0.15"/>
+  <circle cx="1080" cy="530" r="120" fill="#FF5A36" opacity="0.14"/>
+  <g opacity="0.9">
+    <path d="M150 480 L430 260 L660 480 Z" fill="none" stroke="#00B4D8" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M760 240 L1010 240 L930 510 L680 510 Z" fill="none" stroke="#FF5A36" stroke-width="10" stroke-linejoin="round"/>
+  </g>
+  <g>
+    <rect x="100" y="110" width="390" height="100" rx="14" fill="rgba(255,255,255,0.06)"/>
+    <text x="140" y="178" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="78" font-weight="700" letter-spacing="2">ISACS</text>
+  </g>
+  <text x="100" y="580" fill="#E6EEF8" font-family="Segoe UI, Arial, sans-serif" font-size="50" font-weight="600">Secure. Smart. Creative.</text>
+  <circle cx="640" cy="360" r="90" fill="rgba(255,255,255,0.10)"/>
+  <circle cx="640" cy="360" r="74" fill="url(#glow)" opacity="0.9"/>
+  <path d="M618 323 L686 361 L618 399 Z" fill="#FFFFFF"/>
+</svg>

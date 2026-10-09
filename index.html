@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ISACS | Intelligent Systems, Animation &amp; Cloud Services</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="#Home"><img src="images/logo.png" alt="ISACS logo" onerror="this.src='images/Logo.png'"></a>
+  <button class="menu-toggle" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">&#9776;</button>
+  <nav id="nav">
+    <ul>
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#Managed IT & Cloud">Managed IT &amp; Cloud</a></li>
+      <li><a href="#Cybersecurity">Cybersecurity</a></li>
+      <li><a href="#AI & Creative Studios">AI &amp; Creative Studios</a></li>
+      <li><a href="#Meet ISACS">Meet ISACS</a></li>
+      <li><a href="#Contact Us">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Secure. <span class="blue">Smart.</span> <span class="coral">Creative.</span></h1>
+  <p>Securing your infrastructure. Animating your imagination.</p>
+  <a class="btn" href="#Contact Us">Get a Free Consultation</a>
+</section>
+
+<section class="services">
+  <h2>What We Do</h2>
+  <div class="grid">
+    <article><h3>Managed IT Services</h3><p>Reliable support and monitoring for your business systems.</p></article>
+    <article><h3>Cybersecurity</h3><p>24/7 threat monitoring and protection for your network.</p></article>
+    <article><h3>Cloud Services</h3><p>Scalable, secure cloud hosting and migration.</p></article>
+    <article><h3>Artificial Intelligence</h3><p>Intelligent systems that automate and inform decisions.</p></article>
+    <article class="creative"><h3>Graphics, 3D &amp; Animation</h3><p>Product renders, motion graphics and immersive visuals.</p></article>
+  </div>
+</section>
+
+<section class="video-section" id="Meet ISACS">
+  <h2>Meet ISACS</h2>
+  <div class="video-box" id="videoBox">
+    <button class="thumb" id="thumb" aria-label="Play video">
+      <img src="images/video-thumbnail.svg" alt="Video thumbnail">
+      <span class="play">&#9654;</span>
+    </button>
+  </div>
+</section>
+
+<footer>&copy; 2026 ISACS &middot; isacs.ls</footer>
+
+<!-- Pop-up banner -->
+<div class="banner" id="banner">
+  <button class="banner-close" id="bannerClose" aria-label="Close banner">&times;</button>
+  <img src="images/banner.jpeg" alt="ISACS: Cybersecurity and 3D &amp; Animation. Get a free consultation.">
+</div>
+
+<script>
+  // Dismissable banner (slides up from the bottom on load)
+  var banner = document.getElementById('banner');
+  var bannerClose = document.getElementById('bannerClose');
+  if (banner) {
+    window.addEventListener('load', function () {
+      setTimeout(function () { banner.classList.add('show'); }, 400);
+    });
+  }
+  if (bannerClose) {
+    bannerClose.addEventListener('click', function () {
+      if (banner) {
+        banner.classList.remove('show');
+      }
+    });
+  }
+
+  // Click thumbnail -> play video inline on the same page
+  var thumb = document.getElementById('thumb');
+  if (thumb) {
+    thumb.addEventListener('click', function () {
+      var box = document.getElementById('videoBox');
+      if (box) {
+        box.innerHTML = '<video controls autoplay playsinline preload="metadata">' +
+          '<source src="videos/about.mp4" type="video/mp4">' +
+          'Your browser does not support the video tag.</video>';
+      }
+    });
+  }
+</script>
+</body>
+</html>
